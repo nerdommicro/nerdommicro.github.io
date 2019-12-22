@@ -10,8 +10,11 @@ body {
     color: #535c63;
 }
 div {
-    background-color: #fdfbfb;
-    width: 1000px;    
+    background-color: #fdfbfb;       
+}
+.main-div {
+    width: 1000px; 
+    
 }
 
 h1, h2 {
@@ -20,7 +23,7 @@ h1, h2 {
 }
 h1 {
     font-size: 3.815em;
-    padding-bottom: 1.25em;    
+    padding-left: 1.25em;
     text-align: left;
     position: absolute;
     top: 600px;
@@ -29,8 +32,8 @@ h1 {
 }
 h2{
     font-weight: 500;
-    font-size: 2.441em;
-    padding-left: 1.5em; 
+    font-size: 2.441em;   
+    padding-left: 1.25em;
 }
 p {
     font-family: 'Roboto Slab', serif;   
@@ -38,9 +41,12 @@ p {
     font-size: 1.25em;
     line-height: 1.6em;
     padding-left: 2.5em; 
+    padding-right: 2.5em;
+    padding-bottom: 2.5em;
 }
 a{
     text-decoration: none;
+    padding: 10px;
 }
 a:link{
     color: #006699;
@@ -59,14 +65,38 @@ div.hero {
     margin-bottom: 0px;
     margin-left: 0px;
     height: 838px;
-    opacity: 0.87;
+    opacity: 0.90;
 }
 /* self images of steve*/
 .bio {   
     height: 300px; 
+    margin: 10px;
     
 }
+.header-top {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    list-style-type: none; 
+    overflow: hidden; 
+    background-color: white;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 10px;
+}
+li {
+    float: left;
+}
 /* images that are panoramic */
-.panarama {
+.panorama {
    width: 1000px;
 }
+figure {
+    margin: 0;
+    text-align: center;
+}
+figcaption {
+    font-family: 'M PLUS Rounded 1c', sans-serif;  
+    font-size: 1em;
+    padding-bottom: 20px;
+    
+}
+
