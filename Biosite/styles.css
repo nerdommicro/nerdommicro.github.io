@@ -12,9 +12,16 @@ body {
 div {
     background-color: #fdfbfb;       
 }
+table {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    background-color: white;
+}
+
 .main-div {
-    width: 1000px; 
-    
+    width: 1000px;     
 }
 
 h1, h2 {
@@ -26,8 +33,7 @@ h1 {
     padding-left: 1.25em;
     text-align: left;
     position: absolute;
-    top: 600px;
-    left: 1.25em;    
+    top: 600px;    
     color: white;
 }
 h2{
@@ -70,7 +76,7 @@ div.hero {
 /* self images of steve*/
 .bio {   
     height: 300px; 
-    margin: 10px;
+    
     
 }
 .header-top {
@@ -96,7 +102,7 @@ figure {
 figcaption {
     font-family: 'M PLUS Rounded 1c', sans-serif;  
     font-size: 1em;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
     
 }
 
