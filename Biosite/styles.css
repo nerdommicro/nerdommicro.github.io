@@ -50,9 +50,8 @@ p {
     padding-right: 2.5em;
     padding-bottom: 2.5em;
 }
-a{
+a {
     text-decoration: none;
-    padding: 10px;
 }
 a:link{
     color: #006699;
@@ -76,10 +75,9 @@ div.hero {
 }
 /* self images of steve*/
 .bio {   
-    height: 300px; 
-    
-    
+    height: 300px;     
 }
+
 .header-top {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     list-style-type: none; 
@@ -91,6 +89,7 @@ div.hero {
 }
 li {
     float: left;
+    padding: 10px;
 }
 /* images that are panoramic */
 .panorama {
@@ -106,4 +105,6 @@ figcaption {
     padding-bottom: 100px;
     
 }
-
+footerlink {
+    padding: 0px;
+}
