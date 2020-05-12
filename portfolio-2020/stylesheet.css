@@ -1,10 +1,22 @@
 
 .hero {
-opacity: 0.47;
-position: absolute;
-width: 3174px;
-height: 1074px;
-left: -345px;
-top: 0px;
-overflow: visible;
+    opacity: 0.47;
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: -345px;
+    top: -50px;
+    overflow: visible;
+    background-image: url("images/nyc.png");
+}
+
+.td1 {
+    opacity: 0.87;
+    vertical-align: top;
+    padding-top: 50px;
+    padding-left: 25px;
+    background-color: navy;
+    width: 350px;
+    height: 1080px;
+    color:goldenrod;
 }
