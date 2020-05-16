@@ -1,22 +1,161 @@
 
+html {
+    font-size: 1.25em;
+    font-family: 'Roboto Slab', serif; 
+}
+h2 {
+    font-size: 1.563em;
+    font-weight: bold;
+}
+ul {
+   
+    list-style-type: none;
+  }
+  
+  ul li::before {
+    content: "\25AA";
+    color: red;  
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    margin-top: 20px;
+  }
+
+tr.border1{
+    border-bottom: 1px solid lightgray;
+    font-size: 0.8em;
+    font-family:Roboto,Helvetica,sans-serif
+
+}
+td.leftcolumn {
+  margin-top: 0px;
+}
+  
+}
 .hero {
-    opacity: 0.47;
+    
     position: absolute;
     width: 1920px;
     height: 1080px;
-    left: -345px;
-    top: -50px;
+    /*left: -345px;
+    top: -50px;*/
     overflow: visible;
     background-image: url("images/nyc.png");
 }
+.noshadow {
+    text-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
 
-.td1 {
+}
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+}
+
+html {
+    font-size: 1.25em;
+    font-family: 'Roboto Slab', serif; 
+}
+h2 {
+    font-size: 1.563em;
+    font-weight: bold;
+}
+.sidenav {
     opacity: 0.87;
-    vertical-align: top;
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: navy;
+    overflow-x: hidden;
     padding-top: 50px;
     padding-left: 25px;
-    background-color: navy;
-    width: 350px;
-    height: 1080px;
+    padding-right: 25px;
     color:goldenrod;
-}
+    text-align: center;
+   
+  }
+  .sidenavp {
+    opacity: 0.87;
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: navy;
+    overflow-x: hidden;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color:goldenrod;
+    text-align: center;
+    background-image: url("images/nyc.png");
+  }
+  .main {
+    margin-left: 400px; /* Same as the width of the sidenav */
+    padding: 10px 10px;
+    color: navy;
+    text-shadow:1px 2px darkblue
+    
+  }
+  .mainp {
+    margin-left: 500px; /* Same as the width of the sidenav */
+    padding: 10px 10px;
+    color: navy;
+
+    
+  }
+  .button1 {
+      border-color: white;
+      border: 1px;
+  }
+  
+    /* Font-Awesome */
+  .fa {
+    padding: 5px;
+    font-size: 5px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  /* End Font-Awesome */
+  .sidepar {
+      text-align: left;
+      padding-left: 50px;
+      
+  }
+ 
