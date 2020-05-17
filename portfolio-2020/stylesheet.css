@@ -30,10 +30,10 @@ tr.border1{
 td.leftcolumn {
   margin-top: 0px;
 }
-  
+td.rightcolumn {
+  padding-left: 10px;
 }
 .hero {
-    
     position: absolute;
     width: 1920px;
     height: 1080px;
@@ -102,7 +102,7 @@ h2 {
     
   }
   .mainp {
-    margin-left: 500px; /* Same as the width of the sidenav */
+    margin-left: 400px; /* Same as the width of the sidenav */
     padding: 10px 10px;
     color: navy;
 
