@@ -29,6 +29,9 @@ tr.border1{
 }
 td.leftcolumn {
   margin-top: 0px;
+  text-align: right;
+  font-style: italic;
+  color: gray;
 }
 td.rightcolumn {
   padding-left: 10px;
