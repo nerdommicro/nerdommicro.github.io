@@ -34,10 +34,14 @@ td.leftcolumn {
   font-style: italic;
   color: gray;
   vertical-align: top;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 td.rightcolumn {
-  padding-left: 10px;
-  
+    padding-left: 10px;
+    vertical-align: top;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 td.midcolumn {
   vertical-align: top;
