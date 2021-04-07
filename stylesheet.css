@@ -28,14 +28,13 @@ tr.border1{
 
 }
 td.leftcolumn {
-  margin-top:0px;
+  margin-top:0;
   padding-top: 24px;
   text-align: right;
   font-style: italic;
   color: gray;
   vertical-align: top;
-  padding-top: 24px;
-  padding-bottom: 24px;
+    padding-bottom: 24px;
 }
 td.rightcolumn {
     padding-left: 10px;
@@ -129,8 +128,7 @@ h2 {
     
   }
   .button1 {
-      border-color: white;
-      border: 1px;
+      border: 1px white;
   }
   
     /* Font-Awesome */
