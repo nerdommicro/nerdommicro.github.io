@@ -117,7 +117,7 @@ h2 {
     margin-left: 400px; /* Same as the width of the sidenav */
     padding: 10px 10px;
     color: navy;
-    text-shadow:1px 2px darkblue
+    /*text-shadow:1px 2px darkblue*/
     
   }
   .mainp {
