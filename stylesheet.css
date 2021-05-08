@@ -3,6 +3,9 @@ html {
     font-size: 1.25em;
     font-family: 'Roboto Slab', serif; 
 }
+.bodymargin{
+  margin-left: 15px;
+}
 h2 {
     font-size: 1.563em;
     font-weight: bold;
