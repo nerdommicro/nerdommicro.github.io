@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>expanded</key><true/>
+  <key>duplicate_of</key><string>eca9f269-91c9-4b03-814e-65d07b94bd52</string>
+  <key>title</key><string>#PROJ REFS-SWC.DATA</string>
+  <key>nodeid</key><string>c492262c-a74d-400b-ae45-5b0456e0b33d</string>
+  <key>modified_time</key><integer>1621121691</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1621121691</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>4</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

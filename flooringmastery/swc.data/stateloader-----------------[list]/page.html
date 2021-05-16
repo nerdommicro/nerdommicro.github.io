@@ -1,0 +1,288 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>STATELOADER</title>
+</head><body><br/>
+(not static so you can instantiate it) if its static you dont have to but cant call it from a non static method.<br/>
+<br/>
+factory is static. (can you call the static method from the factory?)<br/>
+<br/>
+see LINQ.sln<br/>
+<br/>
+<span style="background-color: #ffffff">to call this method from the program use (calling from a non static method - need to instantiate): <br/>
+<br/>
+private List&lt;STATE&gt; _statesList;<br/>
+_statesList = NEW STATELOADER.LoadStates();<br/>
+<br/>
+[or if static]<br/>
+<br/>
+private List&lt;STATE&gt; _statesList = STATELOADER.LoadStates();<br/>
+<br/>
+<br/>
+THEN USE LINQ:<br/>
+string stateToSearch = &quot;NY&quot;<br/>
+var state = _statesList.Where(x =&gt; x.Abbreviation == stateToSearch).FirstOrDefault();<br/>
+if (state == stateToSearch) {<ul><li style="list-style-type: none">///then it is a valid state and do something</li>
+</ul>
+</span><span style="background-color: #ffffff">}</span><br/>
+<br/>
+using SWC.Models<br/>
+namespace SWC.DATA<br/>
+PUBLIC CLASS STATE-LOADER-REPO<br/>
+<br/>
+<br/>
+#variables<ul><li style="list-style-type: none">private List&lt;Product&gt; <span style="background-color: #ffcc99"><b>_stateList;</b></span></li>
+<li style="list-style-type: none"/>
+</ul>
+#method<ul><li style="list-style-type: none"><b>public List&lt;STATE&gt; LoadStates ( ) {</b></li>
+<li style="list-style-type: none"/>
+<li style="list-style-type: none"> <span style="background-color: #ffcc99">_stateList </span>= new List&lt;State&gt; {</li>
+<li style="list-style-type: none"> new State</li>
+<li style="list-style-type: none"> {              </li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Alabama&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;AL&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Alaska&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;AK&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;American Samoa&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;AS&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Arizona&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;AZ&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Arkansas&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;AR&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;California&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;CA&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Colorado&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;CO&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Connecticut&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;CT&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Delaware&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;DE&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;District Of Columbia&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;DC&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Federated States Of Micronesia&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;FM&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Florida&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;FL&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Georgia&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;GA&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Guam&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;GU&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Hawaii&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;HI&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Idaho&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;ID&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Illinois&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;IL&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Indiana&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;IN&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Iowa&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;IA&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Kansas&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;KS&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Kentucky&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;KY&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Louisiana&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;LA&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Maine&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;ME&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Marshall Islands&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;MH&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Maryland&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;MD&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Massachusetts&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;MA&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Michigan&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;MI&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Minnesota&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;MN&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Mississippi&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;MS&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Missouri&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;MO&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Montana&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;MT&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Nebraska&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;NE&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Nevada&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;NV&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;New Hampshire&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;NH&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;New Jersey&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;NJ&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;New Mexico&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;NM&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;New York&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;NY&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;North Carolina&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;NC&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;North Dakota&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;ND&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Northern Mariana Islands&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;MP&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Ohio&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;OH&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Oklahoma&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;OK&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Oregon&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;OR&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Palau&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;PW&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Pennsylvania&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;PA&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Puerto Rico&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;PR&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Rhode Island&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;RI&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;South Carolina&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;SC&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;South Dakota&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;SD&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Tennessee&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;TN&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Texas&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;TX&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Utah&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;UT&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Vermont&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;VT&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Virgin Islands&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;VI&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Virginia&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;VA&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Washington&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;WA&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;West Virginia&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;WV&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Wisconsin&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;WI&quot;</li>
+<li style="list-style-type: none">  },</li>
+<li style="list-style-type: none">  new State {</li>
+<li style="list-style-type: none">    &quot;name&quot;: &quot;Wyoming&quot;,</li>
+<li style="list-style-type: none">    &quot;abbreviation&quot;: &quot;WY&quot;</li>
+<li style="list-style-type: none">  }</li>
+<li style="list-style-type: none">};</li>
+<li style="list-style-type: none"/>
+<li style="list-style-type: none"><span style="background-color: #ffcc99">return _stateList;</span></li>
+<li style="list-style-type: none"/>
+<li style="list-style-type: none">}</li>
+<li style="list-style-type: none"><ul><li style="list-style-type: none"/>
+</ul>
+</li>
+<li style="list-style-type: none"/>
+</ul>
+<br/>
+</body></html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>ORDERMANAGERFACTORY</title>
+</head><body>using SWC.Data;<br/>
+using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Configuration;<br/>
+using System.Linq;<br/>
+using System.Text;<br/>
+using System.Threading.Tasks;<br/>
+<br/>
+namespace SWC.BLL<br/>
+{<br/>
+  public <span style="background-color: #ff9999">static</span>class ORDERManagerFactory<br/>
+  {<br/>
+    public <span style="background-color: #ff9999">static</span>ORDERManager Create()<br/>
+    {<br/>
+      string mode = ConfigurationManager.AppSettings[&quot;Mode&quot;].ToString();<br/>
+<br/>
+      switch(mode)<br/>
+      {        <br/>
+        //case &quot;Prod&quot;:<br/>
+        //  return new OrderManager(new PRODUCTION-ORDER-Repository());<br/>
+        case &quot;Test&quot;:<br/>
+          return new OrderManager(new TEST-ORDER-Repository());<br/>
+        default:<br/>
+          throw new Exception(&quot;Mode value in app config is not valid&quot;);<br/>
+      }<br/>
+    }<br/>
+  }<br/>
+}<br/>
+</body></html>

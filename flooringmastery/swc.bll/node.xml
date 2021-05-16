@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>expanded</key><true/>
+  <key>nodeid</key><string>5739cd00-3154-459e-be1d-3f678e6ed0d8</string>
+  <key>modified_time</key><integer>1621121121</integer>
+  <key>content_type</key><string>application/x-notebook-dir</string>
+  <key>created_time</key><integer>1621121121</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>icon</key><string>folder-orange.png</string>
+  <key>title</key><string>SWC.BLL</string>
+  <key>version</key><integer>6</integer>
+  <key>order</key><integer>1</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

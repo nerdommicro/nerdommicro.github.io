@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>expanded</key><true/>
+  <key>duplicate_of</key><string>745d70d0-c5f0-4bc7-a38f-5b506b5ef559</string>
+  <key>nodeid</key><string>71e03673-be2b-425d-8c1e-256c71dbfd89</string>
+  <key>modified_time</key><integer>1621174932</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1621174506</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>title</key><string>PRODUCTS.TXT</string>
+  <key>version</key><integer>6</integer>
+  <key>order</key><integer>0</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

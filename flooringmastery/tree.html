@@ -1,0 +1,192 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<style>
+.node
+{
+    padding-left: 20px;
+    display: block;
+}
+
+.node_collapsed
+{
+    padding-left: 20px;
+    display: none;
+
+    
+    visibility: hidden;
+    display: none;
+}
+
+
+
+a:active
+{
+text-decoration:none;
+color: #0000FF;
+font-weight: bold;
+}
+
+a:visited
+{
+text-decoration:none;
+color: #000;
+font-weight: bold;
+}
+
+a:link
+{
+text-decoration:none;
+color: #000;
+font-weight: bold;
+}
+
+a:hover
+{
+text-decoration: underline;
+color: #500;
+font-weight: bold;
+}
+
+</style>
+
+
+<script language="javascript">
+  
+    var displayStates = [];
+
+    function showDiv(div)
+    {    
+        div.style.height     = "";
+        div.style.display    = "block";
+        div.style.visibility = "visible";
+    }
+
+    function hideDiv(div)
+    {
+        div.style.height     = "0px";
+        div.style.display    = "none";      
+        div.style.visibility = "hidden";
+    }
+
+    function toggleDiv(div, defaultState)
+    {
+
+        // set default on first use
+        if (displayStates[div] == undefined)
+            displayStates[div] = defaultState;
+
+        // toggle state
+        displayStates[div] = !displayStates[div];       
+
+        // hide / show
+        if (displayStates[div])
+            showDiv(div);
+        else {
+            hideDiv(div);
+        }
+    }
+
+    function toggleDivName(divname, defaultState)
+    {
+        toggleDiv(document.getElementById(divname), defaultState);
+    }
+
+</script>
+
+<nobr><tt><a href='javascript: toggleDivName("7a8678af-442a-4dc2-97b6-1202a7fcea9b", true)'>+</a>&nbsp;</tt>FlooringMastery-Solution</nobr><br/>
+<div id='7a8678af-442a-4dc2-97b6-1202a7fcea9b' class='node'><nobr><tt><a href='javascript: toggleDivName("561781a1-ece5-419d-8eae-2d5e0f20cf95", true)'>+</a>&nbsp;</tt>SWC.TESTS</nobr><br/>
+<div id='561781a1-ece5-419d-8eae-2d5e0f20cf95' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.tests/app.config/page.html' target='viewer'>App.config</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("5739cd00-3154-459e-be1d-3f678e6ed0d8", true)'>+</a>&nbsp;</tt>SWC.BLL</nobr><br/>
+<div id='5739cd00-3154-459e-be1d-3f678e6ed0d8' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/%23refs-swc.data/page.html' target='viewer'>#REFS-SWC.DATA</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/%23refs-swc.models/page.html' target='viewer'>#REFS-SWC.MODELS</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/%23refs-system.configuration%202/page.html' target='viewer'>#REFS-system.configuration</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/%23refs%20-%20nunit%20framework/page.html' target='viewer'>#REFS - nunit framework</a></nobr><br/>
+<nobr><tt><a href='javascript: toggleDivName("1aad355b-bb06-40db-a054-db02bb7ad08d", true)'>+</a>&nbsp;</tt><a href='swc.bll/ordermanager/page.html' target='viewer'>ORDERMANAGER</a></nobr><br/>
+<div id='1aad355b-bb06-40db-a054-db02bb7ad08d' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/ordermanager/%23using-interfaces-%20responses%20-%20rules/page.html' target='viewer'>#using-INTERFACES- RESPONSES - RULES</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("0bba8667-49fb-41de-9b3a-df4c8621d9d9", false)'>+</a>&nbsp;</tt><a href='swc.bll/ordermanagerfactory/page.html' target='viewer'>ORDERMANAGERFACTORY</a></nobr><br/>
+<div id='0bba8667-49fb-41de-9b3a-df4c8621d9d9' class='node_collapsed'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/ordermanagerfactory/%23usings-data/page.html' target='viewer'>#usings-DATA</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/ordermanagerfactory/%7B%20public%20static%20class%20ordermanagerfactor/page.html' target='viewer'>{ public static class ORDERMANAGERFACTORY</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/ordermanagerfactory/%7B%20public%20static%20ordermanager%20create%28%29/page.html' target='viewer'>{ public static ORDERMANAGER CREATE()</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/ordermanagerfactory/declaration%20%20string%20mode%20%3D%20configuratio/page.html' target='viewer'>declaration:  string mode = ConfigurationManager.AppSettings["Mode"].ToString();</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/ordermanagerfactory/switch%20%28mode%29/page.html' target='viewer'>switch (mode)</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("81cce2de-80fc-4c70-8119-265e84a26ca9", false)'>+</a>&nbsp;</tt>--RULES</nobr><br/>
+<div id='81cce2de-80fc-4c70-8119-265e84a26ca9' class='node_collapsed'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/--rules/add/page.html' target='viewer'>add</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/--rules/edit/page.html' target='viewer'>edit</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.bll/--rules/delete/page.html' target='viewer'>delete</a></nobr><br/>
+</div>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("3aa2315e-0b55-416e-ad30-bb568b68973e", true)'>+</a>&nbsp;</tt>SWC.DATA</nobr><br/>
+<div id='3aa2315e-0b55-416e-ad30-bb568b68973e' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.data/%23refs-swc.models/page.html' target='viewer'>#REFS-SWC.MODELS</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.data/%23refs%20-%20nunit%20framework/page.html' target='viewer'>#REFS - nunit framework</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.data/tax-repository-------------%5Breadonly-fil%202/page.html' target='viewer'>TAX-REPOSITORY-------------[Readonly-file repo]</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.data/stateloader-----------------%5Blist%5D/page.html' target='viewer'>STATELOADER-----------------[&lt;list&gt;]</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.data/productrepository-------%5Bread-only-file/page.html' target='viewer'>PRODUCTREPOSITORY-------[Read-only-file repo]</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.data/order-repository---------%20%5Bproduction%5D%5Bf%202/page.html' target='viewer'>ORDER-REPOSITORY--------- [production][file repo]-RW</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.data/order-repository%20---------%5Btest%5D-rw/page.html' target='viewer'>ORDER-REPOSITORY ---------[test]-RW</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("13455acb-e294-46f4-8393-3989b1b1316b", true)'>+</a>&nbsp;</tt>SWC.MODELS</nobr><br/>
+<div id='13455acb-e294-46f4-8393-3989b1b1316b' class='node'><nobr><tt><a href='javascript: toggleDivName("67b032e2-97d6-42a6-a5bb-431bbc72034e", true)'>+</a>&nbsp;</tt>RESPONSES</nobr><br/>
+<div id='67b032e2-97d6-42a6-a5bb-431bbc72034e' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.models/responses/response.cs%202/page.html' target='viewer'>Response.cs</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("9c4e5523-9fc6-42cd-aabf-2e424947a8fb", true)'>+</a>&nbsp;</tt>INTERFACES</nobr><br/>
+<div id='9c4e5523-9fc6-42cd-aabf-2e424947a8fb' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.models/interfaces/itaxrepository/page.html' target='viewer'>ITaxRepository</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.models/interfaces/iorderrepository/page.html' target='viewer'>IOrderRepository</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.models/interfaces/iproductrepository/page.html' target='viewer'>IProductRepository</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.models/interfaces/iaddorder/page.html' target='viewer'>IAddOrder</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.models/interfaces/ieditorder/page.html' target='viewer'>IEditOrder</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.models/interfaces/ideleteorder/page.html' target='viewer'>IDeleteOrder</a></nobr><br/>
+</div>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.models/order.cs/page.html' target='viewer'>ORDER.cs</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.models/tax/page.html' target='viewer'>TAX</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.models/product/page.html' target='viewer'>PRODUCT</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.models/state.cs/page.html' target='viewer'>STATE.cs</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("f6085f32-bb5b-4863-bdb3-6ff9dd981551", true)'>+</a>&nbsp;</tt>SWC.UI</nobr><br/>
+<div id='f6085f32-bb5b-4863-bdb3-6ff9dd981551' class='node'><nobr><tt><a href='javascript: toggleDivName("8c3fcd4b-a3a8-4cd9-ac11-f994f36a86f4", true)'>+</a>&nbsp;</tt><a href='swc.ui/app.config/page.html' target='viewer'>App.config</a></nobr><br/>
+<div id='8c3fcd4b-a3a8-4cd9-ac11-f994f36a86f4' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.ui/app.config/new%20page/page.html' target='viewer'>&lt;add key="Mode" value="Test   or Prod" /&gt;</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("e72c11c9-bc4e-404b-a125-a9efee1bcff6", true)'>+</a>&nbsp;</tt>FILES</nobr><br/>
+<div id='e72c11c9-bc4e-404b-a125-a9efee1bcff6' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.ui/files/products.txt/page.html' target='viewer'>PRODUCTS.TXT</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.ui/files/taxes.txt/page.html' target='viewer'>TAXES.TXT</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.ui/files/orders_06012013.txt/page.html' target='viewer'>ORDERS_06012013.TXT</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("f95ff350-c760-4624-a350-4862e1933b49", true)'>+</a>&nbsp;</tt>WORKFLOWS</nobr><br/>
+<div id='f95ff350-c760-4624-a350-4862e1933b49' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.ui/workflows/add/page.html' target='viewer'>Add</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.ui/workflows/edit/page.html' target='viewer'>Edit</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.ui/workflows/delete/page.html' target='viewer'>Delete</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.ui/workflows/list/page.html' target='viewer'>List</a></nobr><br/>
+</div>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='swc.ui/menu%20%28list%20-%20add%20-%20edit%20-%20delete%20order%29/page.html' target='viewer'>Menu (list / add / edit / delete order)</a></nobr><br/>
+<nobr><tt><a href='javascript: toggleDivName("584318cc-e87b-444b-a8e2-be435ea1a1f5", true)'>+</a>&nbsp;</tt><a href='swc.ui/program.cs/page.html' target='viewer'>Program.cs</a></nobr><br/>
+<div id='584318cc-e87b-444b-a8e2-be435ea1a1f5' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='swc.ui/program.cs/menu.start%28%29/page.html' target='viewer'>Menu.Start()</a></nobr><br/>
+</div>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("5139b8a7-1c24-46bb-80aa-92f0efaebcc9", false)'>+</a>&nbsp;</tt><a href='trash' target='viewer'>Trash</a></nobr><br/>
+<div id='5139b8a7-1c24-46bb-80aa-92f0efaebcc9' class='node_collapsed'><nobr><tt>&nbsp;&nbsp;</tt>New Folder</nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/swc.bll/page.html' target='viewer'>SWC.BLL</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt>RULES</nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/new%20page/page.html' target='viewer'>New Page</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/%23proj%20refs-swc.data/page.html' target='viewer'>#PROJ REFS-SWC.DATA</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/%23refs-system.configuration/page.html' target='viewer'>#REFS-SYSTEM.configuration</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt>--RULES</nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/rulex/page.html' target='viewer'>RULEx</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/%23using%20swc.models/page.html' target='viewer'>#USING SWC.Models</a></nobr><br/>
+<nobr><tt><a href='javascript: toggleDivName("e706f3bf-3808-4701-86ad-d06428eb4438", true)'>+</a>&nbsp;</tt><a href='trash/ivalidstates/page.html' target='viewer'>IVALIDSTATES</a></nobr><br/>
+<div id='e706f3bf-3808-4701-86ad-d06428eb4438' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='trash/ivalidstates/public%20state%5B%5D%20retrieveallstates%28%29/page.html' target='viewer'>Public STATE[] RetrieveAllStates()</a></nobr><br/>
+</div>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/menu.cs/page.html' target='viewer'>Menu.cs</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/iaddorder/page.html' target='viewer'>IAddOrder</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/ilistorder/page.html' target='viewer'>IListOrder</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/addorderresponse/page.html' target='viewer'>AddOrderResponse</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/editorderresponse/page.html' target='viewer'>EditOrderResponse</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/orderlookupresponse/page.html' target='viewer'>OrderLookupResponse</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash/editorderresponse%202/page.html' target='viewer'>EditOrderResponse</a></nobr><br/>
+</div>
+</div>
+</body></html>

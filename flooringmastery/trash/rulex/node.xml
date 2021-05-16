@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>duplicate_of</key><string>a4c0243f-aa86-48ed-b11d-9e3ddb68ad76</string>
+  <key>title</key><string>RULEx</string>
+  <key>nodeid</key><string>f12cf969-fb93-40f0-8317-ef7ff04a1f9e</string>
+  <key>modified_time</key><integer>1621121460</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1621121460</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>7</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>
